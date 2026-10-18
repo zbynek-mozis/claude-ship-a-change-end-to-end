@@ -2,6 +2,9 @@ node_modules/
 .env
 npm-debug.log*
 
+# IDE project files
+.idea/
+
 # Personal Claude Code settings stay on your machine; the shared
 # .claude/settings.json is committed, but this local override is not.
 .claude/settings.local.json
