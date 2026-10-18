@@ -38,7 +38,7 @@ const isNonEmptyString = (value) =>
 // PUT /users/:id — replace a user's name and email; both are required
 router.put("/:id", (req, res) => {
   const id = Number(req.params.id);
-  const { name, email } = req.body ?? {};
+  const { name, email } = req.body;
 
   if (!isNonEmptyString(name) || !isNonEmptyString(email)) {
     return res
